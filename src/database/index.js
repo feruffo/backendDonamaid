@@ -16,8 +16,8 @@ class Database {
 
   init() {
 //     this.connection = new Sequelize(databaseConfig);
-    this.connection = new Sequelize(databaseConfig.database, databaseConfig.username, databaseConfig.password, {
-      host: databaseConfig.host,
+    this.connection = new Sequelize(databaseConfig.production.database, databaseConfig.production.username, databaseConfig.production.password, {
+      host: databaseConfig.production.host,
       dialect:'postgres'
     });
 //     this.connection = new Sequelize('d9jk9jm7t3n2j4', 'pxqctadzmbjbtv', '6b7b38b3f5fc9452859d46c903cb20a566e3fa5342f31ba0161365fc3863d190', {
