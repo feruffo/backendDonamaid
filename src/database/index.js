@@ -19,11 +19,7 @@ class Database {
       host: databaseConfig.production.host,
       dialect:'postgres',
       quoteIdentifiers: false,
-      define: {
-            "timestamps": true,
-            "underscored": true,
-            "underscoredAll": true,
-        }
+      define: databaseConfig.production.define,
     });    
     models.map((model) => model.init(this.connection));
     models.map((model) => model.associate(this.connection.models));
