@@ -20,6 +20,11 @@ class Database {
       host: databaseConfig.production.host,
       dialect:'postgres',
       quoteIdentifiers: false,
+      define: {
+            "timestamps": true,
+            "underscored": true,
+            "underscoredAll": true,
+        }
     });
 //     this.connection = new Sequelize('d9jk9jm7t3n2j4', 'pxqctadzmbjbtv', '6b7b38b3f5fc9452859d46c903cb20a566e3fa5342f31ba0161365fc3863d190', {
 //       host: 'ec2-54-197-254-117.compute-1.amazonaws.com',
