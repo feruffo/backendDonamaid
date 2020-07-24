@@ -1,5 +1,5 @@
 module.exports = {
-    development: {
+    "development": {
         dialect: 'postgres',
         host: 'localhost',
         username: 'postgres',
@@ -11,7 +11,7 @@ module.exports = {
             underscoredAll: true,
         },
     },
-    production: {
+    "production": {
         dialect: 'postgres',
         host: 'ec2-54-197-254-117.compute-1.amazonaws.com',
         username: 'pxqctadzmbjbtv',
