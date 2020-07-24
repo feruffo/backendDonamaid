@@ -5,7 +5,7 @@ import Professional from '../app/models/Professional';
 import Adress from '../app/models/Adress';
 import Order from '../app/models/Order';
 
-import databaseConfig from '../config/database';
+// import databaseConfig from '../config/database';
 
 const models = [Client, Professional, Adress, Order];
 
