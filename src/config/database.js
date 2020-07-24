@@ -1,5 +1,16 @@
 module.exports = {
-    
+    "development": {
+        "dialect": "postgres",
+        "host": "localhost",
+        "username": "postgres",
+        "password": "docker",
+        "database": "donamaid",
+        "define": {
+            "timestamps": true,
+            "underscored": true,
+            "underscoredAll": true,
+        },
+    },
     "production": {
         "dialect": "postgres",
         "host": "ec2-54-197-254-117.compute-1.amazonaws.com",
